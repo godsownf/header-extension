@@ -1,4 +1,4 @@
-let out = "/public/" + process.env.npm_lifecycle_event.split(" ")[1]let out = "/public/" + process.env.npm_lifecycle_event.split(" ")[1]
+let out = "/public/" + process.env.npm_lifecycle_event.split(" ")[1]
 
 module.exports = {
     optimization: {
