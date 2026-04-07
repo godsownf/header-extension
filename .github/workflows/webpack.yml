@@ -31,5 +31,5 @@ jobs:
         npx webpack
 
     - name: Run
-      run: npm run "script dev"
+      run: npx run "script dev"
 
