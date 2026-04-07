@@ -3,15 +3,15 @@ module.exports = {
         targets: {
             "chrome": "66",
         },
-        corejs: 2,//新版本需要指定核⼼库版本
-        useBuiltIns: "usage"//按需注⼊
+        corejs: 2, // Newer versions require specifying the core library version
+        useBuiltIns: "usage" // Add on demand
     }]],
     "plugins": [
         [
-            "@babel/plugin-transform-runtime",  //可转换没有对应关系的代码
+            "@babel/plugin-transform-runtime", // Transforms code that doesn't have a direct equivalent.
             {
                 "absoluteRuntime": false,
-                "corejs": 2,//false:全局注入，会污染全局环境；2：不会污染全局环境
+                "corejs": 2, //false: global injection, which will pollute the global environment; 2: will not pollute the global environment.
                 "helpers": true,
                 "regenerator": true,
                 "useESModules": false
@@ -19,4 +19,3 @@ module.exports = {
         ]
     ]
 };
-
