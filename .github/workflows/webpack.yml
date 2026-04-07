@@ -2,17 +2,14 @@ name: NodeJS with Webpack
 
 on:
   push:
-    branches: [ "main" ]
   pull_request:
-    branches: [ "main" ]
-
-permissions:
-   contents: write
+    branches: [main]
 
 jobs:
   build:
     runs-on: ubuntu-latest
-
+    permissions:
+      contents: write
     strategy:
       matrix:
         node-version: [18.x, 22.x]
