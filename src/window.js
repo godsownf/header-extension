@@ -25,14 +25,14 @@ import {proxyFunc} from "./kits/proxy";
                 return
             }
             if (scopeBrowser.start) {
-                //执行过跳过
+                //Skip executed
                 return;
             }
             fill(scopeBrowser)
             console.log('%cInjected:' + scopeBrowser.name, 'color: green');
             try {
                 CHEAT(self, scopeBrowser, 'direct');
-                //触发
+                //trigger
                 if (document) {
                     document.getElementsByTagName("iframe")
                     //
@@ -57,4 +57,3 @@ import {proxyFunc} from "./kits/proxy";
         CHEAT.run()
     }
 )();
-
